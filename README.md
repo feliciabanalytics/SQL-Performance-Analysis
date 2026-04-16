@@ -14,7 +14,11 @@ Note: All data represents synthetically generated values for fictional company "
 
 ## Key Insights
 ### Geographic 
-* AdventureWorks generates $390 of sales revenue on average across all regions , with Canada ($175) and the United States ($324) generating 
+* AdventureWorks generates $390 of sales revenue on average across all regions, with an average of 2 units per sale across all regions
+* **Leading Region in Cart Size**: United Kingdom (2.35 Items per Order) 
+* **Top 2 Highest Sales Regions**: Australia (41% better than average) and Germany (17% better than average)
+* **Bottom 2 Highest Sales Regions**: Canada (55% worse than average) and United (17% worse than average)
+* 
 * The United Kingdom has the largest average items per order
 
 ## Demonstrated Skills
