@@ -1,1 +1,24 @@
+**In which regions are we seeing the highest average cart size? Which countries have the highest items per order on average?**
+QUERY: 
+-- Which geographic territitories have the highest items per order on average? 
+SELECT 
+t.country,
+COUNT(DISTINCT(o.ordernumber)) as 'totalorders',
+ROUND(AVG(o.itemsinorder),2) AS 'avgitemsperorder'
+FROM 
+--create table containing count of items per order with territory key
+(SELECT 
+territorykey,
+ordernumber,
+count(orderlineitem) AS 'itemsinorder'
+FROM SalesData2021
+Group By ordernumber
+Order By territorykey) As o
+-- Join sales data table with territory lookup data table
+INNER JOIN 
+TerritoryLookup as t
+ON o.territorykey = t.salesterritorykey
+Group BY t.country
+--Order from largest to smaller avg items per order
+Order BY avgitemsperorder DESC
 
