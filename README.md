@@ -21,8 +21,8 @@ Note: All data represents synthetically generated values for fictional company "
 * **Bottom 2 Highest Sales Regions**: Canada (55% worse than average) and United (17% worse than average)
   
 ## Demonstrated Skills
-* Business Acumen: Providing actionable analysis to stakeholder questions
-* SQL Profiency: Complex queries, table joins, aggregations, window functions
+* **Business Acumen**: Providing actionable analysis to stakeholder questions
+* **SQL Profiency**: Complex queries, table joins, aggregations, window functions
 
 ## SQL Functions & Analytical Concepts
 * Aggregrate Functions
