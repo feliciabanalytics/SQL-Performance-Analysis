@@ -38,4 +38,4 @@ Note: All data represents synthetically generated values for fictional company "
 * Common Table Expressions (CTEs)
 * Table Joins
 * Subqueries
-* Using "AS" Alias
+* Aliases
