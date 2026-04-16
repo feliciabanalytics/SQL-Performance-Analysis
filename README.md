@@ -13,14 +13,13 @@ Note: All data represents synthetically generated values for fictional company "
 2.  How are the countries performing agains the average? Which regions have lower sales compared to the global average?
 
 ## Key Insights
+
 ### Geographic 
 * AdventureWorks generates $390 of sales revenue on average across all regions, with an average of 2 units per sale across all regions
 * **Leading Region in Cart Size**: United Kingdom (2.35 Items per Order) 
 * **Top 2 Highest Sales Regions**: Australia (41% better than average) and Germany (17% better than average)
 * **Bottom 2 Highest Sales Regions**: Canada (55% worse than average) and United (17% worse than average)
-* 
-* The United Kingdom has the largest average items per order
-
+  
 ## Demonstrated Skills
 * Business Acumen: Providing actionable analysis to stakeholder questions
 * SQL Profiency: Complex queries, table joins, aggregations, window functions
