@@ -4,9 +4,8 @@
 * Product Lookup.csv - Product details including: unique product idenitifier, product and model name, product cost, product price, product sku, and product description
 * Territory Lookup.csv - Territory details including: sales territory identifier, region, country, and continent
 * Sales Data 2021.csv - Sales data including: line item order quantity, customer identified, terriority identifier, product identifier, order number, and  order date
-Note:  Sales data assumes currency standardization. Transation values are preconverted to functional currency (USD). Further analysis would be needed to isolate the impact of currency fluctuations. This analysis focuses on gross revenue performance
 
-Note: All data represents synthetically generated values for fictional company "AdventureWorks"
+Note: All data represents synthetically generated values for fictional company "AdventureWorks". Sales data assumes currency standardization. Transation values are preconverted to functional currency (USD). Further analysis would be needed to isolate the impact of currency fluctuations. This analysis focuses on gross revenue performance
 
 ## Business Questions Explored
 1.  In which regions are we seeing the highest average cart size? Which countries have the highest items per order on average?
