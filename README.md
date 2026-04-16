@@ -23,7 +23,7 @@ Note: All data represents synthetically generated values for fictional company "
   
 ### Units per Transaction
 * AdventureWorks maintains a global average of 2 units per order
-* ** Top Performer:** The United Kingdom leads with an average of 2.35 items per order, suggested higher cart purchasing trends
+* **Top Performer:** The United Kingdom leads with an average of 2.35 items per order, suggested higher cart purchasing trends
   
 ## Demonstrated Skills
 * **Business Acumen**: Providing actionable analysis to stakeholder questions
