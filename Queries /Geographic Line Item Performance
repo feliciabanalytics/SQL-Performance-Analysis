@@ -1,0 +1,27 @@
+**How does the average line-item revenue in each country compare to the global mean? Where are we seeing the highest sales transaction values?**
+QUERY:
+-- CTE: Calculate line item revenue. Combine Sales & Product Tables
+WITH revenuetable2021 AS (
+SELECT 
+l.productprice,
+s.orderquantity,
+s.ordernumber,
+s.territorykey,
+ROUND(l.productprice*s.orderquantity,2) AS revenue
+FROM 
+  SalesData2021 as s 
+  Left Join ProductLookup as l 
+  ON s.productkey=l.productkey)
+ SELECT
+ country,
+ --Calculate Average Sales Revenue by Country 
+ ROUND(avg(revenue),2) AS countryavgsales,
+ -- Aggregate Global Average Sales Revenue 
+(SELECT ROUND(Avg(revenue),2) FROM revenuetable2021) AS globalavgsales,
+-- Calculate Performance Ratio #>1 means overperforming average 
+Round(avg(revenue)/(SELECT ROUND(Avg(revenue),2) FROM revenuetable2021),2) As performanceratio
+FROM revenuetable2021 as r
+Left JOIN TerritoryLookup as t
+On r.territorykey = t.salesterritorykey
+Group By country
+ORDER BY countryavgsales DESC
